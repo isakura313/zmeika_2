@@ -2,6 +2,7 @@ from pygame.locals import *
 from random import randint
 import pygame
 import time
+import sys
 
 
 class Apple:
@@ -128,7 +129,7 @@ class App:
                 print("You lose! Collision: ")
                 print("x[0] (" + str(self.player.x[0]) + "," + str(self.player.y[0]) + ")")
                 print("x[" + str(i) + "] (" + str(self.player.x[i]) + "," + str(self.player.y[i]) + ")")
-                exit(0)
+                sys.exit()
 
         pass
 
